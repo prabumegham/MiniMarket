@@ -1,0 +1,11 @@
+<hr>
+  <div class="row" *ngFor="let item of cartList" style="display:flex; margin-left:10px; margin-right: 10px;">
+    <div class="col" style="width:35%">
+    <img src="{{item.imageUrl}}">
+    </div>
+    <div class="col" style="width:50%">
+        <label>{{item.itemName}}</label>
+    </div>
+    <br>
+  </div>
+<hr>

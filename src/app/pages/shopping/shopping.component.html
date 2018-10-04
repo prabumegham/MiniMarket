@@ -1,0 +1,14 @@
+<hr>
+  <div class="row" *ngFor="let item of stockList" style="display:flex; margin-left:10px; margin-right: 10px;">
+    <div class="col" style="width:35%">
+    <img src="{{item.imageUrl}}">
+    </div>
+    <div class="col" style="width:50%">
+        <label>{{item.itemName}}</label>
+    </div>
+    <div class="col" style="width: 15%">
+        <img style="cursor: pointer;" (click)="addToBasket(item)" src="assets/img/stock/basket.jpg">
+      </div>
+    <br>
+  </div>
+<hr>
