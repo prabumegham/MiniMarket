@@ -18,5 +18,7 @@ export class ShoppingComponent implements OnInit {
   addToBasket(item){
     this.stockService.addToCart(item);
   }
-
+  removeFromBasket(item){
+    this.stockService.removeFromCart(item);
+  }
 }

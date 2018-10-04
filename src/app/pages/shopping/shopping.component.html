@@ -7,7 +7,8 @@
         <label>{{item.itemName}}</label>
     </div>
     <div class="col" style="width: 15%">
-        <img style="cursor: pointer;" (click)="addToBasket(item)" src="assets/img/stock/basket.jpg">
+        <img *ngIf="item.added===false" style="cursor: pointer;" (click)="addToBasket(item)" src="assets/img/stock/addItem.jpg">
+        <span *ngIf="item.added===true"> ADDED<img  style="margin-left:10px;cursor: pointer;" (click)="removeFromBasket(item)" src="assets/img/stock/removeItem.jpg"></span>
       </div>
     <br>
   </div>
